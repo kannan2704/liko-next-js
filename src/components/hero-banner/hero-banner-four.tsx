@@ -14,14 +14,14 @@ export default function HeroBannerFour() {
                 <span></span>
               </div>
               <h4 className="tp-hero-3-title tp_reveal_anim">
-                <span className="tp-reveal-line">{"We're"} a high-end</span>
-                <span className="tp-reveal-line">digital agency</span>
+                <span className="tp-reveal-line">We Automate Your</span>
+                <span className="tp-reveal-line">Business With AI</span>
               </h4>
               <span className="tp-hero-3-category tp_reveal_anim">
-                ux/ui design / motion design / branding / development
+              estate agents / restaurants / healthcare / transport
               </span>
               <Link className="tp-btn-black-2" href="/contact">
-                Say Hello{" "}
+              Book a Free AI Audit{" "}
                 <span className="p-relative">
                   <RightArrowTwo />
                   <ArrowBg />
