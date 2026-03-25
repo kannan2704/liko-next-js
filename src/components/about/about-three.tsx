@@ -43,7 +43,7 @@ export default function AboutThree() {
           <div className="col-xl-6 col-lg-6 col-md-8">
             <div className="tp-about-3-content">
               <p className="mb-30 tp_fade_bottom">
-              Vyox AI is a Manchester-based AI automation agency helping UK SMEs save time,
+              Vyox AI is a UK - wide AI automation agency helping UK SMEs save time,
                reduce costs, and grow revenue through intelligent automation.
               </p>
               <p className="mb-45 tp_fade_bottom">
