@@ -58,7 +58,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
             <div className="col-xl-7">
               <div className="tp-project-3-title-box p-relative mb-150">
                 <h4 className="tp-section-title-200 tp_reveal_anim">
-                  Latest <span>Projects</span>
+                Our Core <span>Industries</span>
                 </h4>
                 <div className="tp-project-3-btn-box">
                   <Link
@@ -66,7 +66,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                     href="/portfolio-wrapper"
                   >
                     <span className="zikzak-content">
-                      See <br /> All Project
+                      Get <br /> Started
                       <RightArrow clr="#19191A" />
                     </span>
                     <ProjectShape />
