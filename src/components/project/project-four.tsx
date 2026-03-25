@@ -1,42 +1,54 @@
 import React from "react";
+import Image from "next/image";
+
 import { ProjectShape, RightArrow } from "../svg";
+// images
+import port_1 from "@/assets/img/home-03/portfolio/port-1.jpg";
+import port_2 from "@/assets/img/home-03/portfolio/port-2.jpg";
+import port_3 from "@/assets/img/home-03/portfolio/port-3.jpg";
+import port_4 from "@/assets/img/home-03/portfolio/port-4.jpg";
+import port_5 from "@/assets/img/home-03/portfolio/port-5.jpg";
+import port_6 from "@/assets/img/home-03/portfolio/port-6.jpg";
+import port_7 from "@/assets/img/home-03/portfolio/port-7.jpg";
+import port_8 from "@/assets/img/home-03/portfolio/port-8.jpg";
 import Link from "next/link";
 
-const industries = [
+// portfolio data
+const project_data = [
   {
     id: 1,
-    icon: "🏠",
-    industry: "Estate Agents",
-    description: "AI-powered lead follow-up, automated property alerts, and 24/7 client communication — so you never miss a sale.",
-    services: ["Lead Nurturing", "Auto Valuation Requests", "Viewing Scheduler"],
+    img_1: port_1,
+    img_2: port_2,
+    meta: "DEC 2024 . Creative",
+    title: "Pellente dapibus",
   },
   {
     id: 2,
-    icon: "🍽️",
-    industry: "Restaurants",
-    description: "Automated reservations, WhatsApp ordering, and AI-driven customer re-engagement campaigns to keep tables full.",
-    services: ["Table Booking Bot", "WhatsApp Orders", "Review Management"],
+    img_1: port_3,
+    img_2: port_4,
+    meta: "NOV 2024 . Creative",
+    title: "Chania tourism",
   },
   {
     id: 3,
-    icon: "🏥",
-    industry: "Healthcare",
-    description: "Appointment reminders, patient follow-ups, and admin automation — freeing your staff to focus on care.",
-    services: ["Appointment Reminders", "Patient Follow-ups", "Admin Automation"],
+    img_1: port_5,
+    img_2: port_6,
+    meta: "OCT 2024 . Creative",
+    title: "Fashion sentence",
   },
   {
     id: 4,
-    icon: "🚗",
-    industry: "Transport & Taxi",
-    description: "Automated booking confirmations, driver dispatch notifications, and customer updates — all hands-free.",
-    services: ["Booking Confirmations", "Driver Notifications", "Customer Updates"],
+    img_1: port_7,
+    img_2: port_8,
+    meta: "SEP 2024 . Creative",
+    title: "Fashion sentence",
   },
 ];
 
+// prop type
 type IProps = {
   style_2?: boolean;
 };
-
 export default function ProjectFour({ style_2 = false }: IProps) {
   return (
     <div className={`tp-project-3-area ${style_2 ? "pt-60 pw-project-style" : "pt-130 black-bg"}`}>
@@ -46,12 +58,15 @@ export default function ProjectFour({ style_2 = false }: IProps) {
             <div className="col-xl-7">
               <div className="tp-project-3-title-box p-relative mb-150">
                 <h4 className="tp-section-title-200 tp_reveal_anim">
-                  Industries <span>We Serve</span>
+                  Latest <span>Projects</span>
                 </h4>
                 <div className="tp-project-3-btn-box">
-                  <Link className="tp-btn-zikzak p-relative" href="/contact">
+                  <Link
+                    className="tp-btn-zikzak p-relative"
+                    href="/portfolio-wrapper"
+                  >
                     <span className="zikzak-content">
-                      Get <br /> Started
+                      See <br /> All Project
                       <RightArrow clr="#19191A" />
                     </span>
                     <ProjectShape />
@@ -63,56 +78,44 @@ export default function ProjectFour({ style_2 = false }: IProps) {
         )}
         <div className="row">
           <div className="col-xl-12">
-            {industries.map((item) => (
+            {project_data.map((item, i) => (
               <div key={item.id} className="tp-project-3-wrap">
-                <div className="row align-items-center">
-                  <div className="col-xl-2 col-lg-2 col-md-2 text-center">
-                    <div style={{ fontSize: "80px", lineHeight: 1 }}>{item.icon}</div>
+                <div className="row">
+                  <div className="col-xl-4 col-lg-4 col-md-6">
+                    <div className="tp-project-3-thumb pro-img-1">
+                      <Image
+                        src={item.img_1}
+                        alt="port-img"
+                        style={{ height: "auto" }}
+                      />
+                    </div>
                   </div>
-                  <div className="col-xl-4 col-lg-4 col-md-10">
-                    <div className="tp-project-3-content">
-                      <h4 className="tp-project-3-title-sm" style={{ color: "#fff", fontSize: "28px", marginBottom: "12px" }}>
-                        {item.industry}
+                  <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
+                    <div className="tp-project-3-content text-center">
+                      <span className="tp-project-3-meta">{item.meta} </span>
+                      <h4 className="tp-project-3-title-sm">
+                        <Link href="/portfolio-details-1">{item.title}</Link>
                       </h4>
-                      <p style={{ color: "#aaa", fontSize: "15px", lineHeight: 1.7 }}>
-                        {item.description}
-                      </p>
+                      <Link
+                        className="tp-btn-project-sm"
+                        href="/portfolio-details-1"
+                      >
+                        See Project
+                      </Link>
+                    </div>
+                    <div className="tp-project-3-border color-1 text-center">
+                      <span></span>
                     </div>
                   </div>
-                  <div className="col-xl-4 col-lg-4 col-md-8 offset-md-2 offset-lg-0">
-                    <div style={{ display: "flex", flexDirection: "column", gap: "10px", padding: "20px 0" }}>
-                      {item.services.map((service, i) => (
-                        <span key={i} style={{
-                          background: "rgba(255,255,255,0.05)",
-                          border: "1px solid rgba(255,255,255,0.1)",
-                          padding: "8px 16px",
-                          borderRadius: "4px",
-                          color: "#ccc",
-                          fontSize: "13px",
-                          letterSpacing: "1px"
-                        }}>
-                          ✦ {service}
-                        </span>
-                      ))}
+                  <div className="col-xl-4 col-lg-4 col-md-6 order-0 order-lg-0">
+                    <div className="tp-project-3-thumb pro-img-2">
+                      <Image
+                        src={item.img_2}
+                        alt="port-img"
+                        style={{ height: "auto" }}
+                      />
                     </div>
                   </div>
-                  <div className="col-xl-2 col-lg-2 col-md-4 text-center">
-                    <Link href="/contact" style={{
-                      display: "inline-block",
-                      padding: "10px 20px",
-                      border: "1px solid rgba(255,255,255,0.3)",
-                      color: "#fff",
-                      fontSize: "13px",
-                      letterSpacing: "1px",
-                      textDecoration: "none",
-                      borderRadius: "4px"
-                    }}>
-                      Learn More →
-                    </Link>
-                  </div>
-                </div>
-                <div className="tp-project-3-border color-1 text-center">
-                  <span></span>
                 </div>
               </div>
             ))}
