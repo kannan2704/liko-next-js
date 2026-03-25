@@ -25,10 +25,10 @@ export default function AboutThree() {
                 </span>
               </span>
               <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
-                We tell visual stories through smooth motions{" "}
+                  We help UK businesses grow smarter{" "}
                 <span>
                   {" "}
-                  <br />& fluid Website
+                  <br />with AI Automation
                 </span>
               </h4>
             </div>
@@ -43,12 +43,12 @@ export default function AboutThree() {
           <div className="col-xl-6 col-lg-6 col-md-8">
             <div className="tp-about-3-content">
               <p className="mb-30 tp_fade_bottom">
-                We are a creative design studio based in London. We specialize
-                in Branding, and Web experiences for beauty.
+              Vyox AI is a Manchester-based AI automation agency helping UK SMEs save time,
+               reduce costs, and grow revenue through intelligent automation.
               </p>
               <p className="mb-45 tp_fade_bottom">
-                we’re all about digital experiences. The most creative idea and
-                the most perfect execution mean nothing.
+              We work with estate agents, restaurants, healthcare clinics, and transport companies — 
+              building AI systems that work 24/7 so your team does not have to.
               </p>
               <Link className="tp-btn-black-2 tp_fade_bottom" href="/about-us">
                 About Us
