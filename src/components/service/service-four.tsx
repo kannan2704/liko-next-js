@@ -7,25 +7,25 @@ import icon from '@/assets/img/home-03/service/sv-icon-1.png';
 const service_data = [
   {
     id: 1,
-    title: "Product design",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
-    category: ["Research", "Ui/ UX", "Prototyping"],
+    title: "AI Voice Agents",
+    desc: "Our AI voice agents handle inbound and outbound calls 24/7 — booking appointments, answering FAQs, and qualifying leads so your team can focus on what matters.",
+    category: ["Inbound Calls", "Outbound Follow-ups", "Appointment Booking"],
   },
   {
     id: 2,
-    title: "Web/Mobile",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
-    category: ["SEO", "Creative Development", "Varcel"],
+    title: "Workflow Automation",
+    desc: "We connect your existing tools and automate repetitive tasks — from CRM updates and email sequences to invoice processing and reporting.",
+    category: ["CRM Integration", "Email Automation", "Lead Nurturing"],
   },
   {
     id: 3,
-    title: "Consulting",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
-    category: ["Creative", "Digital strategy", "MVP"],
+    title: "AI Consultation",
+    desc: "Not sure where to start? We audit your business processes, identify automation opportunities, and build a clear roadmap to save you time and money.",
+    category: ["Process Audit", "AI Roadmap", "ROI Analysis"],
   },
 ];
+
 export default function ServiceFour() {
-  
   return (
     <div className="tp-service-3-area pt-130 pb-130">
       <div className="container">
@@ -36,18 +36,12 @@ export default function ServiceFour() {
                 <Image src={icon} alt="icon" />
               </div>
               <span className="tp-section-subtitle-2 tp_fade_bottom">
-                <span>
-                  <FirstBracket />
-                </span>
-                <span className="tp-subtitle-text tp_text_invert">
-                  Our approach
-                </span>
-                <span>
-                  <FirstBracketTwo />
-                </span>
+                <span><FirstBracket /></span>
+                <span className="tp-subtitle-text tp_text_invert">What we offer</span>
+                <span><FirstBracketTwo /></span>
               </span>
               <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
-                Creative <br /> development studio
+                Intelligent <br /> Automation Agency
               </h4>
             </div>
           </div>
@@ -59,7 +53,7 @@ export default function ServiceFour() {
               <div className="col-xl-3 col-lg-3">
                 <div className="tp-service-3-title-box">
                   <h4 className="tp-service-3-title">
-                    <Link href="/service">{item.title}</Link>
+                    <Link href="/contact">{item.title}</Link>
                   </h4>
                 </div>
               </div>
@@ -75,17 +69,12 @@ export default function ServiceFour() {
               </div>
               <div className="col-xl-2 col-lg-2">
                 <div className="tp-service-3-btn-box text-start text-md-end">
-                  <Link
-                    className="tp-btn-zikzak-sm p-relative"
-                    href="/service"
-                  >
+                  <Link className="tp-btn-zikzak-sm p-relative" href="/contact">
                     <span className="zikzak-content">
-                      See <br /> Details
+                      Get <br /> Started
                       <RightArrow clr="currentColor" />
                     </span>
-                    <span>
-                      <SvgBg />
-                    </span>
+                    <span><SvgBg /></span>
                   </Link>
                 </div>
               </div>
