@@ -15,8 +15,8 @@ export default function ContactOne() {
               <span>about it</span>
             </h4>
             <p className="tp_fade_bottom">
-              We will collaborate to find the right answer and bring progress to
-              your business and to the world.
+            Ready to automate your business? 
+            Let's find the right AI solution for you...
             </p>
             <div className="tp-cta-icon">
               <Image src={cta} alt="cta-img" />
