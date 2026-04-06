@@ -100,7 +100,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                         className="tp-btn-project-sm"
                         href="/portfolio-details-1"
                       >
-                        See Project
+                        See More
                       </Link>
                     </div>
                     <div className="tp-project-3-border color-1 text-center">
